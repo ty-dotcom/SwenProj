@@ -128,7 +128,7 @@ function Button({ className, ...props }) {
     }, this);
 }
 _c = Button;
-const buttonClassName = "flex items-center justify-center gap-2 rounded-full bg-blue-500 px-3 py-2 font-semibold text-white transition-colors hover:bg-blue-600 active:bg-blue-600 disabled:bg-gray-200";
+const buttonClassName = "flex items-center justify-center gap-2 rounded-full bg-blue-600 px-3 py-2 font-semibold text-white transition-colors hover:bg-blue-600 active:bg-blue-600 disabled:bg-gray-200";
 var _c;
 __turbopack_context__.k.register(_c, "Button");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -187,7 +187,7 @@ function EndCallButton() {
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         onClick: call.endCall,
-        className: "mx-auto block font-medium rounded-md bg-red-500 text-white hover:underline",
+        className: "mx-auto block font-bold rounded-3xl p-2 bg-red-500 cursor-pointer text-white hover:bg-red-400",
         children: "End call for everyone"
     }, void 0, false, {
         fileName: "[project]/src/components/meets/EndCallButton.tsx",
@@ -301,7 +301,7 @@ function FlexibleCallLayout() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CallControls, {
-                onLeave: ()=>router.push(`/meeting/${call.id}/left`)
+                onLeave: ()=>router.push(`/meets/meeting/${call.id}/left`)
             }, void 0, false, {
                 fileName: "[project]/src/components/meets/FlexibleCallLayout.tsx",
                 lineNumber: 51,
@@ -926,21 +926,6 @@ function MeetingEndedScreen() {
             }, void 0, false, {
                 fileName: "[project]/src/app/meets/meeting/[id]/MeetingPage.tsx",
                 lineNumber: 205,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "space-y-3",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-center text-xl font-bold",
-                    children: "Recordings"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/meets/meeting/[id]/MeetingPage.tsx",
-                    lineNumber: 209,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/app/meets/meeting/[id]/MeetingPage.tsx",
-                lineNumber: 208,
                 columnNumber: 7
             }, this)
         ]

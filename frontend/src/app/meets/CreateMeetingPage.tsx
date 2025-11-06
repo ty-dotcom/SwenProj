@@ -145,7 +145,7 @@ interface MeetingLinkProps {
 }
 
 function MeetingLink({ call, name }: MeetingLinkProps) {
-  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${call.id}`;
+  const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meets/meeting/${call.id}`;
 
   return (
     <div className="flex flex-col gap-3 items-center">

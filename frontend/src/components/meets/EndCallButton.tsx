@@ -16,7 +16,7 @@ export default function EndCallButton() {
   return (
     <button
       onClick={call.endCall}
-      className="mx-auto block font-medium rounded-md bg-red-500 text-white hover:underline"
+      className="mx-auto block font-bold rounded-3xl p-2 bg-red-500 cursor-pointer text-white hover:bg-red-400"
     >
       End call for everyone
     </button>
