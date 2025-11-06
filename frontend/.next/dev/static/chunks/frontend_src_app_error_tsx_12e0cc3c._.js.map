@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/tyree/Codes/JS/SWEN/frontend/src/app/error.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport { OctagonAlert } from \"lucide-react\"\r\n\r\nexport default function ErrorPage(){\r\n    return (\r\n        <div className=\"flex flex-col mx-auto items-center gap-5 \">\r\n            <div className=\"flex items-center gap-3\">\r\n            <OctagonAlert  className=\"text-red-500 size-9\"/>\r\n            <h1 className=\"text-2xl font-bold \">Error</h1>\r\n            </div>\r\n            <p className=\"tracking-wider\">\r\n                Sorry, Something went wrong. Try again later.\r\n            </p>\r\n        </div>\r\n    )\r\n}"],"names":[],"mappings":";;;;;;;;;;AAAA;;;AAIe,SAAS;IACpB,qBACI,yMAAC;QAAI,WAAU;;0BACX,yMAAC;gBAAI,WAAU;;kCACf,yMAAC;wBAAc,WAAU;;;;;;kCACzB,yMAAC;wBAAG,WAAU;kCAAsB;;;;;;;;;;;;0BAEpC,yMAAC;gBAAE,WAAU;0BAAiB;;;;;;;;;;;;AAK1C;KAZwB","debugId":null}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/tyree/Codes/JS/SWEN/frontend/src/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\nimport CreateMeetingPage from \"./CreateMeetingPage\";\n\nexport default function Home() {\n  return <CreateMeetingPage/>\n}\n"],"names":[],"mappings":";;;;;AACA;;;AAEe,SAAS;IACtB,qBAAO,0PAAC,uJAAiB;;;;;AAC3B","debugId":null}}]
+}
