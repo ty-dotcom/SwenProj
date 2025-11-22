@@ -34,6 +34,10 @@ body {
   --str-chat__cta-button-border-radius: theme(borderRadius.DEFAULT);
 }
 
+.str-chat__channel-search.str-chat__channel-search--with-results.str-chat__channel-search--inline {
+  height: fit-content;
+}
+
 /* .str-video__participant-details {
   color: white;
 }
