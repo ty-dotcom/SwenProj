@@ -1,0 +1,39 @@
+import { useUser } from "@clerk/nextjs";
+import { useEffect, useState } from "react";
+import { StreamChat } from "stream-chat";
+
+export default function useInitializeChatClient() {
+    const {user} = useUser();
+    const [chatClient, setChatClient] = useState<StreamChat | null>(null);
+
+    useEffect(() => {
+        if (!user?.id) return; 
+
+        const client = StreamChat.getInstance(process.env.NEXT_PUBLIC_STREAM_VIDEO_API_KEY!);
+
+        client.connectUser(
+            {
+                id: user.id,
+                name: user.fullName || user.id,
+                image: user.imageUrl,
+            },
+            async () => {
+                const response = await fetch('/api/get-token');
+                if (!response.ok) {
+                    throw Error('Failed to fetch chat token');
+                }
+                const body = await response.json();
+                return body.token;
+            }).catch((error) => console.error("Error connecting user to Messages:", error)).then(() => setChatClient(client));
+
+            return () => {
+                setChatClient(null);
+                client.disconnectUser()
+                .catch((error) => console.error("Error disconnecting user from Messages:", error))
+                .then(() => console.log("User disconnected from Messages"));
+            };
+            
+    }, [user?.id, user?.fullName, user?.imageUrl]);
+
+    return chatClient;
+}

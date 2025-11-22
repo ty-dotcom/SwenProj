@@ -449,3 +449,30 @@ Import trace:
 [01:00:05.037] Server  LOG      ✓ Compiled in 595ms
 [01:00:41.708] Server  LOG      ✓ Compiled in 614ms
 [01:01:27.157] Server  LOG      ✓ Compiled in 540ms
+[02:02:45.729] Server  LOG      ✓ Compiled in 576ms
+[02:02:46.932] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[02:02:47.942] Browser LOG     User disconnected from Messages
+[02:03:16.275] Server  LOG      ✓ Compiled in 166ms
+[02:03:18.149] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[02:03:19.941] Browser LOG     User disconnected from Messages
+[02:08:17.293] Server  LOG      ✓ Compiled in 354ms
+[02:08:17.913] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[02:08:31.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:08:33.194] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[02:08:33.799] Browser LOG     User disconnected from Messages
+[02:08:34.439] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[02:08:34.639] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[02:14:25.438] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:14:25.663] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[02:14:38.548] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/messages. Falling back to browser navigation. {}
+[02:14:38.585] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
+[02:21:10.053] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:21:10.454] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[02:21:14.045] Browser LOG     User disconnected from Messages
+[02:21:14.171] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[02:21:14.365] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[02:22:13.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:22:13.513] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[02:22:35.560] Browser LOG     User disconnected from Messages
+[02:22:35.903] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[02:22:36.104] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
