@@ -1,26 +1,451 @@
-[00:00:03.420] Server  LOG      ✓ Ready in 2.7s
-[00:00:09.622] Server  LOG      ○ Compiling / ...
-[00:00:15.727] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.135] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:31.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:31.529] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:44.102] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:44.341] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:47.968] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:48.193] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:01:12.579] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:12.857] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:02:34.279] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:34.494] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:03:50.102] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:50.328] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:04:38.580] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:38.752] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:07:05.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:06.193] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:11:45.947] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:11:46.146] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:17:05.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:05.594] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:17:59.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:00.338] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:06.276] Server  LOG      ✓ Ready in 5.1s
+[00:00:10.991] Server  LOG      ○ Compiling / ...
+[00:00:20.291] Server  ERROR    ⨯ ./src/components/Button.tsx:13:73
+Parsing ecmascript source code failed
+  11 |   ...props
+  12 | }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+> 13 |   return <button className={cn(buttonClassName, className)} {...props} {as} />;
+     |                                                                         ^^
+  14 | }
+  15 |
+  16 | export const buttonClassName =
+
+Expected '...', got 'as'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Button.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Button.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+[00:00:23.289] Browser ERROR   uncaughtError: Error: ./src/components/Button.tsx:13:73
+Parsing ecmascript source code failed
+  11 |   ...props
+  12 | }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+> 13 |   return <button className={cn(buttonClassName, className)} {...props} {as} />;
+     |                                                                         ^^
+  14 | }
+  15 |
+  16 | export const buttonClassName =
+
+Expected '...', got 'as'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Button.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Button.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+[00:00:23.936] Browser ERROR   ./src/components/Button.tsx:13:73
+Parsing ecmascript source code failed
+  11 |   ...props
+  12 | }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+> 13 |   return <button className={cn(buttonClassName, className)} {...props} {as} />;
+     |                                                                         ^^
+  14 | }
+  15 |
+  16 | export const buttonClassName =
+
+Expected '...', got 'as'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Button.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Button.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[00:00:25.125] Browser ERROR   ./src/components/Button.tsx:13:73
+Parsing ecmascript source code failed
+  11 |   ...props
+  12 | }: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+> 13 |   return <button className={cn(buttonClassName, className)} {...props} {as} />;
+     |                                                                         ^^
+  14 | }
+  15 |
+  16 | export const buttonClassName =
+
+Expected '...', got 'as'
+
+Import traces:
+  Client Component Browser:
+    ./src/components/Button.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component Browser]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/Button.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Client Component SSR]
+    ./src/app/meets/CreateMeetingPage.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+[00:01:19.737] Server  LOG      ✓ Compiled in 454ms
+[00:01:23.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:24.975] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:02:02.628] Server  LOG      ✓ Compiled in 92ms
+[00:02:08.599] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:08.916] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:20:18.023] Server  LOG      ✓ Compiled in 277ms
+[00:21:14.593] Server  LOG      ✓ Compiled in 1954ms
+[00:27:05.645] Server  LOG      ✓ Compiled in 110ms
+[00:27:05.936] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:27:06.947] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:27:06.947] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:30:10.242] Server  LOG      ✓ Compiled in 113ms
+[00:30:10.945] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:30:10.945] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:30:10.945] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:30:39.313] Server  LOG      ✓ Compiled in 72ms
+[00:30:39.935] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:30:39.935] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:30:39.935] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:31:37.382] Server  LOG      ✓ Compiled in 191ms
+[00:31:38.431] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:33:38.376] Server  LOG      ✓ Compiled in 1965ms
+[00:33:38.937] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:33:39.946] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:33:39.946] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:33:43.198] Server  LOG      ✓ Compiled in 87ms
+[00:33:43.932] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:33:43.932] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:33:43.932] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:34:00.616] Server  LOG      ✓ Compiled in 1882ms
+[00:34:02.256] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:34:02.256] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:34:02.256] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:35:38.875] Server  LOG      ✓ Compiled in 3.4s
+[00:35:39.943] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:35:40.949] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:35:40.949] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:36:10.348] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:10.695] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:36:11.275] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:38:13.049] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:38:13.550] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:38:14.179] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:38:14.395] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
+[00:39:18.774] Server  LOG      ✓ Compiled in 121ms
+[00:39:19.964] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not provided\"","isWSFailure":false}
+[00:39:29.255] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:29.647] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:39:30.092] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not valid\"","isWSFailure":false}
+[00:39:30.280] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
+[00:41:34.276] Server  LOG      ✓ Compiled in 112ms
+[00:41:34.947] Browser ERROR   unhandledRejection: Error: {"code":2,"StatusCode":401,"message":"WS failed with code 2 and reason - Connect failed with error: \"api_key not valid\"","isWSFailure":false}
+[00:41:43.887] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:44.146] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:42:50.555] Server  LOG      ✓ Compiled in 248ms
+[00:42:50.945] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:42:58.455] Server  LOG      ✓ Compiled in 159ms
+[00:42:58.933] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:43:09.663] Server  LOG      ✓ Compiled in 66ms
+[00:43:09.944] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:43:18.444] Server  LOG      ✓ Compiled in 74ms
+[00:43:18.943] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:43:22.372] Server  LOG      ✓ Compiled in 92ms
+[00:43:22.938] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:46:47.554] Server  LOG      ✓ Compiled in 935ms
+[00:46:47.940] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:47:12.324] Server  LOG      ✓ Compiled in 115ms
+[00:47:12.932] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:49:03.839] Server  LOG      ✓ Compiled in 137ms
+[00:49:04.934] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:49:14.095] Server  ERROR    ⨯ ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+[00:49:14.432] Browser ERROR   uncaughtError: Error: ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+[00:49:14.607] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:49:14.607] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:49:14.607] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:49:14.607] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:49:14.607] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:50:04.934] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:50:35.093] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:50:37.840] Server  ERROR    ⨯ ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+[00:50:38.145] Browser ERROR   uncaughtError: Error: ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+[00:50:38.325] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:50:38.325] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:50:38.325] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:50:38.325] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:50:38.325] Browser ERROR   ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app\globals.css:1:1: Can't resolve '~stream-chat-react/dist/css/v2/index.css' in 'C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\src\app'
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (C:\Users\djtho\OneDrive\Documents\SwenProj\frontend\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[00:52:07.879] Server  LOG      ✓ Compiled in 2.6s
+[00:52:10.824] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:11.154] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:53:03.642] Server  LOG      ✓ Compiled in 357ms
+[00:53:03.938] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:53:29.563] Server  LOG      ✓ Compiled in 255ms
+[00:53:29.939] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:53:46.422] Server  LOG      ✓ Compiled in 427ms
+[00:53:46.968] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:53:53.798] Server  LOG      ✓ Compiled in 201ms
+[00:53:53.938] Browser WARN    Consecutive calls to connectUser is detected, ideally you should only call this function once in your app.
+[00:58:43.561] Server  LOG      ✓ Compiled in 1446ms
+[01:00:01.320] Server  LOG      ✓ Compiled in 1399ms
+[01:00:05.037] Server  LOG      ✓ Compiled in 595ms
+[01:00:41.708] Server  LOG      ✓ Compiled in 614ms
+[01:01:27.157] Server  LOG      ✓ Compiled in 540ms
