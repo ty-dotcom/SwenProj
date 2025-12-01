@@ -1,21 +1,18 @@
-[00:00:02.290] Server  LOG      ✓ Ready in 1898ms
-[00:00:03.761] Server  WARN     ⚠ Cross origin request detected from spr7ymldmqxkw2wf5g2343pge4.srv.us to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:02.696] Server  LOG      ✓ Ready in 2.1s
+[00:00:02.699] Server  WARN     ⚠ Cross origin request detected from spr7ymldmqxkw2wf5g2343pge4.srv.us to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:09.774] Server  LOG      ○ Compiling /messages ...
-[00:00:21.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:21.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:22.546] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:22.756] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:23.522] Browser LOG     User disconnected from Messages
-[00:00:23.550] Browser LOG     User disconnected from Messages
-[00:00:25.496] Server  LOG     Received new push subscription: {}
-[00:00:25.518] Server  LOG     Received new push subscription: {}
-[00:00:25.533] Server  LOG     Received new push subscription: {}
-[00:00:25.561] Server  LOG     Received new push subscription: {}
-[00:00:25.937] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
-[00:00:26.223] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
-[00:00:26.365] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
-[00:00:26.556] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
-[00:00:47.806] Server  LOG     Removing push subscription: {}
-[00:00:53.973] Server  LOG     Received new push subscription: {}
-[00:38:32.725] Server  LOG      ✓ Compiled in 838ms
+[00:00:07.760] Server  LOG      ○ Compiling /messages ...
+[00:00:22.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:22.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:24.101] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:28.459] Browser LOG     User disconnected from Messages
+[00:00:29.246] Server  LOG     Received new push subscription: {}
+[00:00:29.277] Server  LOG     Received new push subscription: {}
+[00:00:30.073] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:00:30.678] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:00:33.531] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:34.996] Server  LOG     Received new push subscription: {}
+[00:00:35.011] Server  LOG     Received new push subscription: {}
+[00:00:35.414] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:00:35.586] Browser LOG     User disconnected from Messages
+[00:00:35.750] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"

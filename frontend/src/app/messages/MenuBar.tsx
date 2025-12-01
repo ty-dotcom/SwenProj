@@ -1,5 +1,5 @@
 import { getCurrentPushSubscription, registerPushNotifications, unregisterPushSubscriptionToServer } from "@/src/notifications/pushService";
-import { Users, BellOff, BellRing } from "lucide-react";
+import { BellOff, BellRing } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface MenuBarProps {
@@ -61,3 +61,4 @@ function PushSubscriptionToggleButton() {
         )}
     </div>)
 }
+

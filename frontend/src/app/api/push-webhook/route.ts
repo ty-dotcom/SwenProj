@@ -4,7 +4,7 @@ export async function POST(request: Request) {
     try{
         const body = await request.json();
 
-        console.log(body);
+        console.log(JSON.stringify(body));
 
         return NextResponse.json(
             { success: true }, 

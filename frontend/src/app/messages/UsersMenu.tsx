@@ -1,4 +1,4 @@
-import { Avatar, useChannelListContext, useChatContext } from "stream-chat-react";
+import { Avatar, useChatContext } from "stream-chat-react";
 import { UserResource } from "@clerk/types";
 import { useEffect, useState } from "react";
 import type { UserResponse } from "stream-chat";
