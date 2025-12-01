@@ -110,6 +110,24 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/api/push-webhook/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/push-webhook">> = Specific
+  const handler = {} as typeof import("../../../src/app/api/push-webhook/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/api/register-push/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/register-push">> = Specific
+  const handler = {} as typeof import("../../../src/app/api/register-push/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 
 
 

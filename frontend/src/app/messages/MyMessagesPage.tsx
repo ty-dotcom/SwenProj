@@ -8,6 +8,8 @@ import MessagesSideBar from "./MessagesSideBar";
 import MessagesChannel from "./MessagesChannel";
 import { Menu, X } from "lucide-react";
 import useWindowSize from "@/src/hooks/messages/useWindowSize";
+import { registerServiceWorker } from "@/src/lib/serviceWorker";
+import { getCurrentPushSubscription, sendPushSubscriptionToServer } from "@/src/notifications/pushService";
 
 export default function MessagesPage() {
   const chatClient = useInitializeChatClient();
@@ -21,6 +23,31 @@ export default function MessagesPage() {
     if (isLargeScreen) setMessagesSideBarOpen(false);
   }, [windowSize.width]);
 
+  useEffect(() => {
+    async function setUpServiceWorker() {
+      try {
+        await registerServiceWorker();
+      }catch (error) {
+        console.error("Service Worker registration failed:", error);
+      }
+    }
+    setUpServiceWorker();
+  }, []);
+
+  useEffect(() => {
+    async function syncPushSubscription() {
+      try{
+        const subscription = await getCurrentPushSubscription();
+        if (subscription) {
+          await sendPushSubscriptionToServer(subscription);
+        }
+      }catch (error) {
+        console.error(error);
+      }
+    }
+    syncPushSubscription();
+  }, []);
+  
   const handleCloseSideBar = useCallback(() => {
     setMessagesSideBarOpen(false);
   }, []);

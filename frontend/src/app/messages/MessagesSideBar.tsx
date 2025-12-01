@@ -44,7 +44,7 @@ export default function MessagesSideBar({
       {
         usersMenuOpen && <UserMenu loggedInUser={user}/>
       }
-      {/*<MenuBar onMenuClick={()=> {setUsersMenuOpen(true)}}>*/}
+      <MenuBar onMenuClick={() => { setUsersMenuOpen(true); }} />
       <ChannelList
         filters={{ type: "messaging", members: { $in: [user.id] } }}
         sort={{ last_message_at: -1 }}
