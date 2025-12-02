@@ -1,5 +1,5 @@
 import { getCurrentPushSubscription, registerPushNotifications, unregisterPushSubscriptionToServer } from "@/src/notifications/pushService";
-import { BellOff, BellRing } from "lucide-react";
+import { BellOff, BellRing, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
 interface MenuBarProps {
@@ -9,6 +9,7 @@ interface MenuBarProps {
 export default function MenuBar({ onMenuClick }: MenuBarProps) {
     return (
         <div className="flex items-center justify-between gap-3 border-e border-e-amber-50 p-3">
+                
                 <PushSubscriptionToggleButton />
                 
         </div>

@@ -1,18 +1,97 @@
-[00:00:02.696] Server  LOG      ✓ Ready in 2.1s
-[00:00:02.699] Server  WARN     ⚠ Cross origin request detected from spr7ymldmqxkw2wf5g2343pge4.srv.us to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:02.897] Server  LOG      ✓ Ready in 2.3s
+[00:00:37.157] Server  LOG      ○ Compiling /messages ...
+[00:00:45.565] Server  WARN     ⚠ Cross origin request detected from spr7ymldmqxkw2wf5g2343pge4.srv.us to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:07.760] Server  LOG      ○ Compiling /messages ...
-[00:00:22.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:22.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:24.101] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:28.459] Browser LOG     User disconnected from Messages
-[00:00:29.246] Server  LOG     Received new push subscription: {}
-[00:00:29.277] Server  LOG     Received new push subscription: {}
-[00:00:30.073] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
-[00:00:30.678] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
-[00:00:33.531] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:34.996] Server  LOG     Received new push subscription: {}
-[00:00:35.011] Server  LOG     Received new push subscription: {}
-[00:00:35.414] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
-[00:00:35.586] Browser LOG     User disconnected from Messages
-[00:00:35.750] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:00:45.772] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:47.662] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:49.544] Browser LOG     User disconnected from Messages
+[00:00:50.111] Server  LOG     Received new push subscription: {}
+[00:00:50.123] Server  LOG     Received new push subscription: {}
+[00:00:50.556] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:00:50.898] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:00:53.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:55.340] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:57.651] Server  LOG     Received new push subscription: {}
+[00:00:57.658] Server  LOG     Received new push subscription: {}
+[00:00:57.739] Browser LOG     User disconnected from Messages
+[00:00:57.742] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:00:58.058] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:02:07.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:09.962] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:02:12.537] Browser LOG     User disconnected from Messages
+[00:02:12.698] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:02:13.034] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:03:53.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:54.155] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:03:59.181] Browser LOG     User disconnected from Messages
+[00:03:59.818] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:04:00.140] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:05:18.277] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:19.967] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:22.178] Browser LOG     User disconnected from Messages
+[00:05:22.230] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:05:22.532] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:05:47.902] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:49.262] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:51.009] Server  LOG     Received new push subscription: {}
+[00:05:51.022] Server  LOG     Received new push subscription: {}
+[00:05:51.026] Browser LOG     User disconnected from Messages
+[00:05:51.063] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:05:51.619] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:07:15.785] Browser ERROR   Service Worker registration failed: {}
+[00:07:15.785] Browser ERROR   Service Worker registration failed: {}
+[00:08:00.026] Server  LOG      ✓ Compiled in 134ms
+[00:08:08.702] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:10.516] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:11.906] Browser LOG     User disconnected from Messages
+[00:08:12.226] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:08:12.707] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:09:00.341] Server  LOG     Received new push subscription: {}
+[00:09:02.633] Browser ERROR   Error toggling push subscription: {}
+[00:09:42.769] Server  LOG      ✓ Compiled in 117ms
+[00:10:44.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:46.970] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:10:50.304] Browser LOG     User disconnected from Messages
+[00:10:50.319] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:10:50.328] Server  LOG     Received new push subscription: {}
+[00:10:50.334] Server  LOG     Received new push subscription: {}
+[00:10:51.202] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:11:04.476] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:06.274] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:11:07.720] Server  LOG     Received new push subscription: {}
+[00:11:07.789] Browser LOG     User disconnected from Messages
+[00:11:07.808] Server  LOG     Received new push subscription: {}
+[00:11:08.117] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:11:08.463] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:11:12.872] Server  LOG     Removing push subscription: {}
+[00:11:17.759] Server  LOG     Received new push subscription: {}
+[00:15:40.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:42.170] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:15:45.914] Server  LOG     Received new push subscription: {}
+[00:15:45.937] Server  LOG     Received new push subscription: {}
+[00:15:45.959] Browser LOG     User disconnected from Messages
+[00:15:46.010] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:15:46.304] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:37:14.246] Server  LOG        Reload env: .env.local
+[00:39:42.749] Server  LOG      ✓ Compiled in 96ms
+[00:39:43.768] Browser WARN    Warning: Failed to re-render. We will retry on the next Fast Refresh event.
+Error: ❌ Attempted to access a server-side environment variable on the client
+[00:40:50.902] Server  LOG      ✓ Compiled in 82ms
+[00:41:55.955] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:57.125] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:41:57.842] Server  LOG     Received new push subscription: {}
+[00:41:57.888] Browser LOG     User disconnected from Messages
+[00:41:57.921] Server  LOG     Received new push subscription: {}
+[00:41:58.268] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:41:58.571] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:48:53.212] Server  LOG      ✓ Compiled in 183ms
+[00:49:04.370] Browser LOG     daniel797
+[00:49:04.370] Browser LOG     daniel797
+[00:49:14.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:15.466] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:49:16.000] Browser LOG     User disconnected from Messages
+[00:49:16.018] Server  LOG     Received new push subscription: {}
+[00:49:16.027] Server  LOG     Received new push subscription: {}
+[00:49:16.281] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:49:16.604] Server  LOG     Current user: "user_35q4qqqTh5Kicr8dWUsOqTz2FTP"
+[00:50:21.346] Server  LOG      ✓ Compiled in 105ms

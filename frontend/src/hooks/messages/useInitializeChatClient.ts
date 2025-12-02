@@ -9,7 +9,7 @@ export default function useInitializeChatClient() {
     useEffect(() => {
         if (!user?.id) return; 
 
-        const client = StreamChat.getInstance(process.env.NEXT_PUBLIC_STREAM_VIDEO_API_KEY!);
+        const client = StreamChat.getInstance(process.env.NEXT_PUBLIC_STREAM_MESSAGES_API_KEY!);
 
         client.connectUser(
             {

@@ -2,6 +2,7 @@ import { currentUser } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 import { env } from "process";
 import { StreamChat } from "stream-chat";
+import { getToken } from "../../meets/actions";
 
 export async function GET() {
     try{
@@ -13,14 +14,14 @@ export async function GET() {
             return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
         }
 
-        const apiKey = env.NEXT_PUBLIC_STREAM_VIDEO_API_KEY;
+        const apiKey = env.NEXT_PUBLIC_STREAM_MESSAGES_API_KEY;
         
         if (!apiKey) {
-            console.error("Missing NEXT_PUBLIC_STREAM_VIDEO_API_KEY");
+            console.error("Missing NEXT_PUBLIC_STREAM_MESSAGES_API_KEY");
             return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
         }
 
-        const streamClient = StreamChat.getInstance(apiKey, env.STREAM_VIDEO_API_SECRET);
+        const streamClient = StreamChat.getInstance(apiKey, env.MESSAGES_API_SECRET);
 
         const expirationTime = Math.floor(Date.now() / 1000) + 60 * 60;
 
