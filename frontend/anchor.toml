@@ -1,0 +1,10 @@
+[lcl-host]
+realm-apid = 'localhost'
+
+[org]
+apid = 'teejayjn'
+
+[service]
+apid = 'frontend'
+category = 'python'
+cert-style = 'acme'
