@@ -1,6 +1,7 @@
-import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 export default function Navbar() {
+  const { user } = useUser();
   return (
     < header className="shadow">
       <div className="mx-auto flex h-14 w-full items-center justify-between p-3 font-medium">
@@ -10,6 +11,8 @@ export default function Navbar() {
           <div className="flex items-center gap-5">
             <Link href="/meets/meetings">Meetings</Link>
             <Link href="/messages">Messages</Link>
+            <Link href="/calendar">Messages</Link>
+            <Link href={user?.username === "admin" ? "/counsellor/upload" :"/client/resources"}>Resorces</Link>
             <UserButton />
           </div>
         </SignedIn>
