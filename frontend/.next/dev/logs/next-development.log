@@ -8,3 +8,26 @@
 [00:00:23.890] Server  LOG     Received new push subscription: {}
 [00:00:24.392] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
 [00:00:24.625] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:00:01.462] Server  LOG      ✓ Ready in 1095ms
+[00:00:02.396] Server  ERROR   Clerk: Clock skew detected. This usually means that your system clock is inaccurate. Clerk will attempt to account for the clock skew in development.
+
+To resolve this issue, make sure your system's clock is set to the correct time (e.g. turn off and on automatic time synchronization).
+
+---
+
+JWT issued at date claim (iat) is in the future. Issued at date: Thu, 04 Dec 2025 00:42:30 GMT; Current date: Thu, 04 Dec 2025 00:42:21 GMT; (reason=token-iat-in-the-future, token-carrier=cookie)
+[00:00:02.564] Server  ERROR   Clerk: Clock skew detected. This usually means that your system clock is inaccurate. Clerk will attempt to account for the clock skew in development.
+
+To resolve this issue, make sure your system's clock is set to the correct time (e.g. turn off and on automatic time synchronization).
+
+---
+
+JWT issued at date claim (iat) is in the future. Issued at date: Thu, 04 Dec 2025 00:42:30 GMT; Current date: Thu, 04 Dec 2025 00:42:21 GMT; (reason=token-iat-in-the-future, token-carrier=cookie)
+[00:00:02.725] Server  ERROR   Clerk: Clock skew detected. This usually means that your system clock is inaccurate. Clerk will attempt to account for the clock skew in development.
+
+To resolve this issue, make sure your system's clock is set to the correct time (e.g. turn off and on automatic time synchronization).
+
+---
+
+JWT issued at date claim (iat) is in the future. Issued at date: Thu, 04 Dec 2025 00:42:30 GMT; Current date: Thu, 04 Dec 2025 00:42:21 GMT; (reason=token-iat-in-the-future, token-carrier=cookie)
+[00:00:02.751] Server  LOG     Clerk: Refreshing the session token resulted in an infinite redirect loop. This usually means that your Clerk instance keys do not match - make sure to copy the correct publishable and secret keys from the Clerk dashboard.

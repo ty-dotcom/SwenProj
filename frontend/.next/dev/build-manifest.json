@@ -3,9 +3,7 @@
     "/_app": []
   },
   "devFiles": [],
-  "polyfillFiles": [
-    "static/chunks/node_modules_next_dist_build_polyfills_polyfill-nomodule.js"
-  ],
+  "polyfillFiles": [],
   "lowPriorityFiles": [
     "static/development/_ssgManifest.js",
     "static/development/_buildManifest.js"
@@ -22,4 +20,5 @@
     "static/chunks/_a0ff3932._.js",
     "static/chunks/turbopack-_45210fd5._.js"
   ]
+ 
 }
