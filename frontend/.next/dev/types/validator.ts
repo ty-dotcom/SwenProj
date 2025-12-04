@@ -164,6 +164,33 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/reports/[id]/edit/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/reports/[id]/edit">> = Specific
+  const handler = {} as typeof import("../../../src/app/reports/[id]/edit/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/reports/[id]/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/reports/[id]">> = Specific
+  const handler = {} as typeof import("../../../src/app/reports/[id]/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/reports/create/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/reports/create">> = Specific
+  const handler = {} as typeof import("../../../src/app/reports/create/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/api/create-payment-intent/route.ts
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/create-payment-intent">> = Specific

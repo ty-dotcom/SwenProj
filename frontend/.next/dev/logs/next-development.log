@@ -33,3 +33,1138 @@
 [00:09:31.536] Browser ERROR   Failed to fetch bookings: 500
 [00:11:36.081] Browser LOG     [{"description":"A guide with practical tools to reduce stress.","fileUrl":"/uploads/resources/stress_guide.pdf","title":"Stress Management Guide","uploadDate":"2025-12-04T13:40:56"},{"description":"Daily mindfulness exercises for emotional balance.","fileUrl":"/uploads/resources/mindfulness_workbook.pdf","title":"Mindfulness Workbook","uploadDate":"2025-12-04T13:40:56"},{"description":"Simple breathing steps to reduce anxiety attacks.","fileUrl":"/uploads/resources/anxiety_breathing.png","title":"Anxiety Breathing Exercises","uploadDate":"2025-12-04T13:40:56"},{"description":"A printable checklist for weekly self-care habits.","fileUrl":"/uploads/resources/self_care_checklist.docx","title":"Self-Care Checklist","uploadDate":"2025-12-04T13:40:56"},{"description":"Basic information about identifying depressive symptoms.","fileUrl":"/uploads/resources/depression_info.pdf","title":"Depression Information Sheet","uploadDate":"2025-12-04T13:40:56"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_VRF3biq.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:15.557"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_6lYkINS.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:16.686"},{"description":"sadasdsadas","fileUrl":"/resources/None/Video.mp4","title":"dasdsad","uploadDate":"2025-12-04T12:14:47.508"},{"description":"VEry funny looking tree","fileUrl":"/resources/None/png-transparent-mythical-phoenix-watercolor-resplendent-flaming-phoenix-b_zg1jV4f.png","title":"FunnyTree","uploadDate":"2025-12-04T12:33:17.975"}]
 [00:11:37.710] Browser LOG     [{"description":"A guide with practical tools to reduce stress.","fileUrl":"/uploads/resources/stress_guide.pdf","title":"Stress Management Guide","uploadDate":"2025-12-04T13:40:56"},{"description":"Daily mindfulness exercises for emotional balance.","fileUrl":"/uploads/resources/mindfulness_workbook.pdf","title":"Mindfulness Workbook","uploadDate":"2025-12-04T13:40:56"},{"description":"Simple breathing steps to reduce anxiety attacks.","fileUrl":"/uploads/resources/anxiety_breathing.png","title":"Anxiety Breathing Exercises","uploadDate":"2025-12-04T13:40:56"},{"description":"A printable checklist for weekly self-care habits.","fileUrl":"/uploads/resources/self_care_checklist.docx","title":"Self-Care Checklist","uploadDate":"2025-12-04T13:40:56"},{"description":"Basic information about identifying depressive symptoms.","fileUrl":"/uploads/resources/depression_info.pdf","title":"Depression Information Sheet","uploadDate":"2025-12-04T13:40:56"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_VRF3biq.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:15.557"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_6lYkINS.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:16.686"},{"description":"sadasdsadas","fileUrl":"/resources/None/Video.mp4","title":"dasdsad","uploadDate":"2025-12-04T12:14:47.508"},{"description":"VEry funny looking tree","fileUrl":"/resources/None/png-transparent-mythical-phoenix-watercolor-resplendent-flaming-phoenix-b_zg1jV4f.png","title":"FunnyTree","uploadDate":"2025-12-04T12:33:17.975"}]
+[00:34:38.541] Server  LOG        Reload env: .env.local
+[00:34:49.609] Server  LOG      ✓ Compiled in 5.7s
+[00:34:49.804] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\route-types-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:49.813] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:49.820] Server  WARN     ⚠ "Failed to reload dynamic routes:" Error: UNKNOWN: unknown error, open 'C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\.next\dev\types\routes.d.ts'
+[00:34:49.830] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\route-types-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:49.839] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:49.842] Server  WARN     ⚠ "Failed to reload dynamic routes:" Error: UNKNOWN: unknown error, open 'C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\.next\dev\types\routes.d.ts'
+[00:34:49.868] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\route-types-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:49.870] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:49.871] Server  WARN     ⚠ "Failed to reload dynamic routes:" Error: UNKNOWN: unknown error, open 'C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\.next\dev\types\routes.d.ts'
+[00:34:56.749] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\route-types-utils.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:56.762] Server  ERROR   C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:34:56.788] Server  WARN     ⚠ "Failed to reload dynamic routes:" Error: UNKNOWN: unknown error, open 'C:\Users\kasik\OneDrive\Documents\GitHub\SwenProj\frontend\.next\dev\types\routes.d.ts'
+[00:34:56.801] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.811] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.812] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.812] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.812] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.812] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.812] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.812] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.812] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.812] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.812] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.812] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.812] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.813] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.813] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.813] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.813] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.813] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.813] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.813] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.813] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.813] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.813] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:56.813] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:56.970] Server  LOG      ✓ Compiled in 218ms
+[00:34:57.335] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:57.335] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:57.335] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:57.335] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:57.338] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:57.338] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:57.338] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:57.338] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:58.606] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+[00:34:59.294] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+[00:34:59.337] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:59.337] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:34:59.337] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:34:59.337] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:35:00.337] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:35:00.337] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:35:00.337] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:35:00.337] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:35:00.337] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:35:00.337] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:35:00.337] Browser ERROR   ./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+[00:35:00.337] Browser ERROR   ./frontend/src/app/page.tsx:68:1
+Parsing ecmascript source code failed
+  66 |   )
+  67 | }
+> 68 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+     | ^^^^^^^
+  69 |
+
+Merge conflict marker encountered.
+
+Import traces:
+  Client Component Browser:
+    ./frontend/src/app/page.tsx [Client Component Browser]
+    ./frontend/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/src/app/page.tsx [Client Component SSR]
+    ./frontend/src/app/page.tsx [Server Component]
+[00:35:02.405] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+[00:35:02.487] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+[00:35:02.718] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+[00:35:02.785] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+[00:35:03.032] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+[00:35:03.113] Server  ERROR    ⨯ ./frontend/src/components/Navbar.tsx:1:1
+Parsing ecmascript source code failed
+> 1 | <<<<<<< HEAD
+    | ^^^^^^^
+  2 | "use client";
+  3 |
+  4 | import {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:113:1
+Parsing ecmascript source code failed
+  111 |   );
+  112 | }
+> 113 | =======
+      | ^^^^^^^
+  114 | import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, useUser } from "@clerk/nextjs";
+  115 | import Link from "next/link";
+  116 | export default function Navbar() {
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
+
+./frontend/src/components/Navbar.tsx:142:1
+Parsing ecmascript source code failed
+  140 |   );
+  141 | }
+> 142 | >>>>>>> 5aad31f84c351a273c85d6e24e49711e200a0c6a
+      | ^^^^^^^
+  143 |
+
+Merge conflict marker encountered.
+
+Import trace:
+  Server Component:
+    ./frontend/src/components/Navbar.tsx
+    ./frontend/src/app/layout.tsx
+
+
