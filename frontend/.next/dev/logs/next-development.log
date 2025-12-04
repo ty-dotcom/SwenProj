@@ -1,73 +1,35 @@
-[00:00:07.162] Server  LOG      ✓ Ready in 5.4s
-[00:00:11.260] Server  LOG      ○ Compiling / ...
-[00:00:19.609] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:21.884] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:00:48.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:48.468] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ClerkProvider publishableKey="pk_test_cH..." proxyUrl="" domain="" isSatellite={false} signInUrl="" signUpUrl="" ...>
-      <ClerkProviderBase publishableKey="pk_test_cH..." proxyUrl="" domain="" isSatellite={false} signInUrl="" ...>
-        <ClerkContextProvider initialState={null} isomorphicClerkOptions={{...}}>
-          <OrganizationProvider organization={undefined}>
-            <SWRConfig value={undefined}>
-              <__experimental_CheckoutProvider value={undefined}>
-                <RouterTelemetry>
-                <ClerkJSScript>
-                <html lang="en">
-                  <body
-                    className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable"
--                   data-new-gr-c-s-check-loaded="14.1129.0"
--                   data-gr-ext-installed=""
-                  >
-
-[00:00:48.468] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:24:05.821] Server  LOG      ✓ Compiled in 170ms
-[00:24:13.865] Server  LOG      ✓ Compiled in 137ms
-[00:24:19.057] Browser WARN    [coordinator]: connection:WS failed with code: 1006: 1006 and reason:  {"event":{"isTrusted":true}}
-[00:24:21.820] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:22.177] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:24:22.177] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ClerkProvider publishableKey="pk_test_cH..." proxyUrl="" domain="" isSatellite={false} signInUrl="" signUpUrl="" ...>
-      <ClerkProviderBase publishableKey="pk_test_cH..." proxyUrl="" domain="" isSatellite={false} signInUrl="" ...>
-        <ClerkContextProvider initialState={null} isomorphicClerkOptions={{...}}>
-          <OrganizationProvider organization={undefined}>
-            <SWRConfig value={undefined}>
-              <__experimental_CheckoutProvider value={undefined}>
-                <RouterTelemetry>
-                <ClerkJSScript>
-                <html lang="en">
-                  <body
-                    className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable"
--                   data-new-gr-c-s-check-loaded="14.1129.0"
--                   data-gr-ext-installed=""
-                  >
-
-[00:24:37.738] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:38.076] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:24:40.930] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:41.245] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
-[00:26:15.897] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:16.171] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:06.465] Server  LOG      ✓ Ready in 4.8s
+[00:00:10.808] Server  LOG      ○ Compiling /dashboard ...
+[00:00:19.077] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.400] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:19.461] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:22.336] Browser ERROR   Error checking payment status: {}
+[00:00:22.336] Browser ERROR   Error checking payment status: {}
+[00:00:43.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:43.897] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:02:56.581] Browser WARN    You may test your Stripe.js integration over HTTP. However, live Stripe.js integrations must use HTTPS.
+[00:04:03.733] Browser LOG     Test
+[00:04:11.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:12.025] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:04:30.410] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:30.607] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:04:31.155] Browser ERROR   Failed to fetch bookings: 500
+[00:04:31.155] Browser ERROR   Failed to fetch bookings: 500
+[00:05:03.449] Browser ERROR   Failed to fetch bookings: 500
+[00:05:03.449] Browser ERROR   Failed to fetch bookings: 500
+[00:05:15.724] Server  LOG      ○ Compiling /messages ...
+[00:05:20.632] Browser LOG     User disconnected from Messages
+[00:05:22.769] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:05:23.016] Server  LOG     Current user: "user_34qylY2NNIVNJHGMkNeb91mYZ2C"
+[00:06:31.260] Browser ERROR   Failed to fetch bookings: 500
+[00:06:31.260] Browser ERROR   Failed to fetch bookings: 500
+[00:06:32.069] Browser LOG     User disconnected from Messages
+[00:07:38.323] Browser WARN    [CallState]: Participant with sessionId bc4bef3c-13bb-4fec-b261-6de3db583d8c not found
+[00:07:50.819] Browser LOG     [{"description":"A guide with practical tools to reduce stress.","fileUrl":"/uploads/resources/stress_guide.pdf","title":"Stress Management Guide","uploadDate":"2025-12-04T13:40:56"},{"description":"Daily mindfulness exercises for emotional balance.","fileUrl":"/uploads/resources/mindfulness_workbook.pdf","title":"Mindfulness Workbook","uploadDate":"2025-12-04T13:40:56"},{"description":"Simple breathing steps to reduce anxiety attacks.","fileUrl":"/uploads/resources/anxiety_breathing.png","title":"Anxiety Breathing Exercises","uploadDate":"2025-12-04T13:40:56"},{"description":"A printable checklist for weekly self-care habits.","fileUrl":"/uploads/resources/self_care_checklist.docx","title":"Self-Care Checklist","uploadDate":"2025-12-04T13:40:56"},{"description":"Basic information about identifying depressive symptoms.","fileUrl":"/uploads/resources/depression_info.pdf","title":"Depression Information Sheet","uploadDate":"2025-12-04T13:40:56"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_VRF3biq.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:15.557"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_6lYkINS.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:16.686"},{"description":"sadasdsadas","fileUrl":"/resources/None/Video.mp4","title":"dasdsad","uploadDate":"2025-12-04T12:14:47.508"}]
+[00:07:51.918] Browser LOG     [{"description":"A guide with practical tools to reduce stress.","fileUrl":"/uploads/resources/stress_guide.pdf","title":"Stress Management Guide","uploadDate":"2025-12-04T13:40:56"},{"description":"Daily mindfulness exercises for emotional balance.","fileUrl":"/uploads/resources/mindfulness_workbook.pdf","title":"Mindfulness Workbook","uploadDate":"2025-12-04T13:40:56"},{"description":"Simple breathing steps to reduce anxiety attacks.","fileUrl":"/uploads/resources/anxiety_breathing.png","title":"Anxiety Breathing Exercises","uploadDate":"2025-12-04T13:40:56"},{"description":"A printable checklist for weekly self-care habits.","fileUrl":"/uploads/resources/self_care_checklist.docx","title":"Self-Care Checklist","uploadDate":"2025-12-04T13:40:56"},{"description":"Basic information about identifying depressive symptoms.","fileUrl":"/uploads/resources/depression_info.pdf","title":"Depression Information Sheet","uploadDate":"2025-12-04T13:40:56"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_VRF3biq.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:15.557"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_6lYkINS.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:16.686"},{"description":"sadasdsadas","fileUrl":"/resources/None/Video.mp4","title":"dasdsad","uploadDate":"2025-12-04T12:14:47.508"}]
+[00:09:12.725] Browser LOG     [{"description":"A guide with practical tools to reduce stress.","fileUrl":"/uploads/resources/stress_guide.pdf","title":"Stress Management Guide","uploadDate":"2025-12-04T13:40:56"},{"description":"Daily mindfulness exercises for emotional balance.","fileUrl":"/uploads/resources/mindfulness_workbook.pdf","title":"Mindfulness Workbook","uploadDate":"2025-12-04T13:40:56"},{"description":"Simple breathing steps to reduce anxiety attacks.","fileUrl":"/uploads/resources/anxiety_breathing.png","title":"Anxiety Breathing Exercises","uploadDate":"2025-12-04T13:40:56"},{"description":"A printable checklist for weekly self-care habits.","fileUrl":"/uploads/resources/self_care_checklist.docx","title":"Self-Care Checklist","uploadDate":"2025-12-04T13:40:56"},{"description":"Basic information about identifying depressive symptoms.","fileUrl":"/uploads/resources/depression_info.pdf","title":"Depression Information Sheet","uploadDate":"2025-12-04T13:40:56"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_VRF3biq.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:15.557"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_6lYkINS.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:16.686"},{"description":"sadasdsadas","fileUrl":"/resources/None/Video.mp4","title":"dasdsad","uploadDate":"2025-12-04T12:14:47.508"},{"description":"VEry funny looking tree","fileUrl":"/resources/None/png-transparent-mythical-phoenix-watercolor-resplendent-flaming-phoenix-b_zg1jV4f.png","title":"FunnyTree","uploadDate":"2025-12-04T12:33:17.975"}]
+[00:09:31.536] Browser ERROR   Failed to fetch bookings: 500
+[00:09:31.536] Browser ERROR   Failed to fetch bookings: 500
+[00:11:36.081] Browser LOG     [{"description":"A guide with practical tools to reduce stress.","fileUrl":"/uploads/resources/stress_guide.pdf","title":"Stress Management Guide","uploadDate":"2025-12-04T13:40:56"},{"description":"Daily mindfulness exercises for emotional balance.","fileUrl":"/uploads/resources/mindfulness_workbook.pdf","title":"Mindfulness Workbook","uploadDate":"2025-12-04T13:40:56"},{"description":"Simple breathing steps to reduce anxiety attacks.","fileUrl":"/uploads/resources/anxiety_breathing.png","title":"Anxiety Breathing Exercises","uploadDate":"2025-12-04T13:40:56"},{"description":"A printable checklist for weekly self-care habits.","fileUrl":"/uploads/resources/self_care_checklist.docx","title":"Self-Care Checklist","uploadDate":"2025-12-04T13:40:56"},{"description":"Basic information about identifying depressive symptoms.","fileUrl":"/uploads/resources/depression_info.pdf","title":"Depression Information Sheet","uploadDate":"2025-12-04T13:40:56"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_VRF3biq.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:15.557"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_6lYkINS.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:16.686"},{"description":"sadasdsadas","fileUrl":"/resources/None/Video.mp4","title":"dasdsad","uploadDate":"2025-12-04T12:14:47.508"},{"description":"VEry funny looking tree","fileUrl":"/resources/None/png-transparent-mythical-phoenix-watercolor-resplendent-flaming-phoenix-b_zg1jV4f.png","title":"FunnyTree","uploadDate":"2025-12-04T12:33:17.975"}]
+[00:11:37.710] Browser LOG     [{"description":"A guide with practical tools to reduce stress.","fileUrl":"/uploads/resources/stress_guide.pdf","title":"Stress Management Guide","uploadDate":"2025-12-04T13:40:56"},{"description":"Daily mindfulness exercises for emotional balance.","fileUrl":"/uploads/resources/mindfulness_workbook.pdf","title":"Mindfulness Workbook","uploadDate":"2025-12-04T13:40:56"},{"description":"Simple breathing steps to reduce anxiety attacks.","fileUrl":"/uploads/resources/anxiety_breathing.png","title":"Anxiety Breathing Exercises","uploadDate":"2025-12-04T13:40:56"},{"description":"A printable checklist for weekly self-care habits.","fileUrl":"/uploads/resources/self_care_checklist.docx","title":"Self-Care Checklist","uploadDate":"2025-12-04T13:40:56"},{"description":"Basic information about identifying depressive symptoms.","fileUrl":"/uploads/resources/depression_info.pdf","title":"Depression Information Sheet","uploadDate":"2025-12-04T13:40:56"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_VRF3biq.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:15.557"},{"description":"asdasdas","fileUrl":"/resources/None/Final_Presentations_2025_6lYkINS.pdf","title":"sdasdas","uploadDate":"2025-12-04T12:11:16.686"},{"description":"sadasdsadas","fileUrl":"/resources/None/Video.mp4","title":"dasdsad","uploadDate":"2025-12-04T12:14:47.508"},{"description":"VEry funny looking tree","fileUrl":"/resources/None/png-transparent-mythical-phoenix-watercolor-resplendent-flaming-phoenix-b_zg1jV4f.png","title":"FunnyTree","uploadDate":"2025-12-04T12:33:17.975"}]

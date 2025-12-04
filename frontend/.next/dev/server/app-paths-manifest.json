@@ -1,7 +1,15 @@
 {
   "/Payment/page": "app/Payment/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
+  "/Payment/payment-success/[amount]/page": "app/Payment/payment-success/[amount]/page.js",
+  "/api/create-payment-intent/route": "app/api/create-payment-intent/route.js",
+  "/api/get-token/route": "app/api/get-token/route.js",
   "/calendar/page": "app/calendar/page.js",
+  "/client/resources/page": "app/client/resources/page.js",
+  "/counsellor/upload/page": "app/counsellor/upload/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/meets/meeting/[id]/left/page": "app/meets/meeting/[id]/left/page.js",
+  "/meets/meeting/[id]/page": "app/meets/meeting/[id]/page.js",
   "/meets/meetings/page": "app/meets/meetings/page.js",
+  "/messages/page": "app/messages/page.js",
   "/page": "app/page.js"
 }
