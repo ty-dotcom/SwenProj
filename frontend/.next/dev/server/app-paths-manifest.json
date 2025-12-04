@@ -1,4 +1,6 @@
 {
-  "/calendar/page": "app/calendar/page.js",
+  "/api/get-token/route": "app/api/get-token/route.js",
+  "/api/register-push/route": "app/api/register-push/route.js",
+  "/messages/page": "app/messages/page.js",
   "/page": "app/page.js"
 }

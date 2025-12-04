@@ -9,16 +9,23 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.1",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "@clerk/nextjs": "^6.34.1",
+    "@clerk/nextjs": "^6.35.2",
+    "@clerk/themes": "^2.4.37",
     "@stream-io/node-sdk": "^0.7.17",
     "@stream-io/video-react-sdk": "^1.25.0",
+    "@t3-oss/env-nextjs": "^0.13.8",
+    "@types/web-push": "^3.6.4",
     "clsx": "^2.1.1",
     "lucide-react": "^0.552.0",
     "nanoid": "^5.1.6",
-    "tailwind-merge": "^3.3.1"
+    "next": "^16.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "stream-chat-react": "^13.12.0",
+    "svix": "^1.81.0",
+    "tailwind-merge": "^3.4.0",
+    "web-push": "^3.6.7",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.38.0",
@@ -26,16 +33,17 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "baseline-browser-mapping": "^2.8.32",
     "eslint": "^9.38.0",
     "eslint-config-next": "16.0.1",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.4.0",
     "jiti": "^2.6.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.4.1",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "typescript-eslint": "^8.46.2",
-    "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.7.1"
+    "typescript-eslint": "^8.46.2"
   }
 }
