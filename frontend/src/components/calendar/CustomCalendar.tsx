@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useRouter } from "next/navigation";
+
 
 type Availability = {
   id: number
@@ -10,8 +12,22 @@ type Availability = {
   counselor: number
 }
 
+type Booking = {
+  id: number
+  availability_id: number
+  client_name: string
+  client_email: string
+  client_age: number
+  booked_at: string
+  notes: string
+  start_time: string
+  end_time: string
+}
+
 export default function CustomCalendar() {
+  const router = useRouter();
   const [availability, setAvailability] = useState<Availability[]>([])
+  const [userBookings, setUserBookings] = useState<Booking[]>([])
   const [selectedDate, setSelectedDate] = useState<Date | null>(null)
   const [selectedSlot, setSelectedSlot] = useState<Availability | null>(null)
   const [loading, setLoading] = useState(true)
@@ -26,6 +42,11 @@ export default function CustomCalendar() {
   const [age, setAge] = useState('')
   const [email, setEmail] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
+  
+  // Cancel state
+  const [showCancelModal, setShowCancelModal] = useState(false)
+  const [bookingToCancel, setBookingToCancel] = useState<Booking | null>(null)
+  const [isCancelling, setIsCancelling] = useState(false)
 
   const now = new Date()
 
@@ -52,19 +73,58 @@ export default function CustomCalendar() {
     }
   }
 
+  // Fetch user's bookings
+  const fetchUserBookings = async (userEmail: string) => {
+    try {
+      const res = await fetch(`http://localhost:8000/api/bookings/user/${userEmail}/`)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const data = await res.json()
+      setUserBookings(data)
+    } catch (err) {
+      console.error('Error fetching user bookings:', err)
+    }
+  }
+
   useEffect(() => {
     fetchAvailability()
+    // Try to get user email from localStorage or session
+    const userEmail = localStorage.getItem('userEmail')
+    if (userEmail) {
+      fetchUserBookings(userEmail)
+    }
   }, [])
 
   // Get slots for a specific date
   const getSlotsForDate = (date: Date) => {
-    const dateStr = date.toISOString().split('T')[0]
-    return availability.filter((slot) => slot.start_time.startsWith(dateStr))
+    const year = date.getFullYear()
+    const month = String(date.getMonth() + 1).padStart(2, '0')
+    const day = String(date.getDate()).padStart(2, '0')
+    const dateStr = `${year}-${month}-${day}`
+    
+    const slots = availability.filter((slot) => {
+      const slotDate = slot.start_time.split('T')[0] || slot.start_time.substring(0, 10)
+      return slotDate === dateStr
+    })
+    
+    return slots
   }
 
-  // Check if date has available slots
+  // Get user's bookings for a specific date
+  const getUserBookingsForDate = (date: Date) => {
+    const year = date.getFullYear()
+    const month = String(date.getMonth() + 1).padStart(2, '0')
+    const day = String(date.getDate()).padStart(2, '0')
+    const dateStr = `${year}-${month}-${day}`
+    
+    return userBookings.filter((booking) => {
+      const bookingDate = booking.start_time.split('T')[0] || booking.start_time.substring(0, 10)
+      return bookingDate === dateStr
+    })
+  }
+
+  // Check if date has available slots or user bookings
   const isDateAvailable = (date: Date) => {
-    return getSlotsForDate(date).length > 0
+    return getSlotsForDate(date).length > 0 || getUserBookingsForDate(date).length > 0
   }
 
   // Handle day click
@@ -85,41 +145,90 @@ export default function CustomCalendar() {
     setEmail('')
   }
 
-  // Handle booking submission
-  const handleSubmit = async () => {
-    if (!selectedSlot || !name || !age || !email) {
-      alert('Please fill in all fields')
-      return
-    }
+  // Handle cancel button click
+  const handleCancelClick = (booking: Booking) => {
+    setBookingToCancel(booking)
+    setShowCancelModal(true)
+  }
 
-    setIsSubmitting(true)
+  // Confirm cancellation
+  const confirmCancellation = async () => {
+    if (!bookingToCancel) return
+
+    setIsCancelling(true)
 
     try {
-      const res = await fetch('http://localhost:8000/api/book/', {
+      const res = await fetch(`http://localhost:8000/api/bookings/${bookingToCancel.id}/cancel/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+      })
+
+      if (!res.ok) {
+        const errorData = await res.json()
+        throw new Error(errorData.detail || 'Cancellation failed')
+      }
+
+      alert('Appointment cancelled successfully!')
+      
+      // Refresh data
+      await fetchAvailability()
+      const userEmail = localStorage.getItem('userEmail')
+      if (userEmail) {
+        await fetchUserBookings(userEmail)
+      }
+      
+      // Close modal
+      setShowCancelModal(false)
+      setBookingToCancel(null)
+      
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Cancellation failed')
+    } finally {
+      setIsCancelling(false)
+    }
+  }
+
+  const handleSubmit = async () => {
+    if (!selectedSlot || !name || !age || !email) {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const res = await fetch("http://localhost:8000/api/book/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           availability_id: selectedSlot.id,
           name: name,
           age: parseInt(age),
           email: email,
+          notes: "Unpaid", // Set notes to "Unpaid" by default
         }),
-      })
+      });
 
       if (!res.ok) {
-        const errorData = await res.json()
-        throw new Error(errorData.detail || 'Booking failed')
+        const errorData = await res.json();
+        throw new Error(errorData.detail || "Booking failed");
       }
 
-      alert('Booking successful!')
-      setShowForm(false)
-      setSelectedSlot(null)
-      setSelectedDate(null)
-      fetchAvailability() // Refresh to remove booked slot
+      // Store user email for future bookings retrieval
+      localStorage.setItem('userEmail', email)
+
+      alert("Booking successful!");
+      
+      // Refresh data
+      await fetchAvailability()
+      await fetchUserBookings(email)
+      
+      router.push("/Payment");
+
     } catch (err) {
-      alert(err instanceof Error ? err.message : 'Booking failed')
+      alert(err instanceof Error ? err.message : "Booking failed");
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 
@@ -139,7 +248,7 @@ export default function CustomCalendar() {
     <div style={{ padding: '2rem', maxWidth: '900px', margin: '0 auto' }}>
       <h2 style={{ marginBottom: '0.5rem' }}>Session Calendar</h2>
       <p style={{ color: '#888', marginBottom: '1rem' }}>
-        {availability.length} slots available
+        {availability.length} slots available • {userBookings.length} your booking(s)
       </p>
 
       {/* Navigation */}
@@ -176,7 +285,9 @@ export default function CustomCalendar() {
       {/* Calendar Grid */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '8px' }}>
         {daysArray.map((date, index) => {
-          const hasSlots = isDateAvailable(date)
+          const hasSlots = getSlotsForDate(date).length > 0
+          const userBookingsForDate = getUserBookingsForDate(date)
+          const hasBookings = userBookingsForDate.length > 0
           const isSelected = selectedDate?.toDateString() === date.toDateString()
           const isToday = date.toDateString() === now.toDateString()
 
@@ -187,12 +298,12 @@ export default function CustomCalendar() {
               style={{
                 border: isToday ? '2px solid #4a9eff' : '1px solid #444',
                 padding: '0.5rem',
-                cursor: hasSlots ? 'pointer' : 'default',
-                backgroundColor: isSelected ? '#4a9eff' : hasSlots ? '#2a2a2a' : '#1a1a1a',
-                color: hasSlots ? '#fff' : '#555',
+                cursor: (hasSlots || hasBookings) ? 'pointer' : 'default',
+                backgroundColor: isSelected ? '#4a9eff' : hasBookings ? '#ff6b35' : hasSlots ? '#2a2a2a' : '#1a1a1a',
+                color: (hasSlots || hasBookings) ? '#fff' : '#555',
                 borderRadius: '6px',
                 textAlign: 'center',
-                opacity: hasSlots ? 1 : 0.5,
+                opacity: (hasSlots || hasBookings) ? 1 : 0.5,
               }}
             >
               <div style={{ fontSize: '0.65rem', color: isSelected ? '#fff' : '#888' }}>
@@ -202,7 +313,12 @@ export default function CustomCalendar() {
               <div style={{ fontSize: '0.6rem', color: isSelected ? '#ddd' : '#666' }}>
                 {date.toLocaleDateString('default', { weekday: 'short' })}
               </div>
-              {hasSlots && (
+              {hasBookings && (
+                <div style={{ fontSize: '0.55rem', color: '#fff', marginTop: '2px', fontWeight: 'bold' }}>
+                  ✓ Booked
+                </div>
+              )}
+              {hasSlots && !hasBookings && (
                 <div style={{ fontSize: '0.55rem', color: isSelected ? '#fff' : '#4a9eff', marginTop: '2px' }}>
                   {getSlotsForDate(date).length} slot(s)
                 </div>
@@ -212,8 +328,40 @@ export default function CustomCalendar() {
         })}
       </div>
 
+      {/* Show user's bookings for selected date */}
+      {selectedDate && getUserBookingsForDate(selectedDate).length > 0 && (
+        <div style={{ marginTop: '2rem', padding: '1.5rem', backgroundColor: '#2a2a2a', borderRadius: '8px', border: '1px solid #ff6b35' }}>
+          <h3 style={{ marginBottom: '1rem', color: '#ff6b35' }}>Your Appointments</h3>
+          {getUserBookingsForDate(selectedDate).map((booking) => (
+            <div key={booking.id} style={{ marginBottom: '1rem', padding: '1rem', backgroundColor: '#1a1a1a', borderRadius: '6px' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem' }}>
+                {new Date(booking.start_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                {' - '}
+                {new Date(booking.end_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+              </p>
+              <p style={{ color: '#888', fontSize: '0.9rem' }}>Status: {booking.notes || 'Unpaid'}</p>
+              <button
+                onClick={() => handleCancelClick(booking)}
+                style={{
+                  marginTop: '0.5rem',
+                  padding: '0.5rem 1rem',
+                  backgroundColor: '#dc3545',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontSize: '0.9rem',
+                }}
+              >
+                Cancel Appointment
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+
       {/* Time Slots */}
-      {selectedDate && (
+      {selectedDate && getSlotsForDate(selectedDate).length > 0 && (
         <div style={{ marginTop: '2rem' }}>
           <h3>
             Available times for {selectedDate.toLocaleDateString('default', { 
@@ -360,6 +508,82 @@ export default function CustomCalendar() {
                 }}
               >
                 Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Cancel Confirmation*/}
+      {showCancelModal && bookingToCancel && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000,
+        }}>
+          <div style={{
+            backgroundColor: '#2a2a2a',
+            padding: '2rem',
+            borderRadius: '8px',
+            maxWidth: '500px',
+            width: '90%',
+            border: '1px solid #444',
+          }}>
+            <h3 style={{ marginBottom: '1rem', color: '#fff' }}>Cancel Appointment</h3>
+            <p style={{ color: '#ccc', marginBottom: '1.5rem' }}>
+              Are you sure you want to cancel your appointment on{' '}
+              {new Date(bookingToCancel.start_time).toLocaleString([], {
+                weekday: 'long',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+              })}?
+            </p>
+            <p style={{ color: '#888', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+              This time slot will be made available for others to book.
+            </p>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <button
+                onClick={() => {
+                  setShowCancelModal(false)
+                  setBookingToCancel(null)
+                }}
+                disabled={isCancelling}
+                style={{
+                  flex: 1,
+                  padding: '0.75rem',
+                  backgroundColor: '#444',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: isCancelling ? 'not-allowed' : 'pointer',
+                }}
+              >
+                Keep Appointment
+              </button>
+              <button
+                onClick={confirmCancellation}
+                disabled={isCancelling}
+                style={{
+                  flex: 1,
+                  padding: '0.75rem',
+                  backgroundColor: isCancelling ? '#666' : '#dc3545',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: isCancelling ? 'not-allowed' : 'pointer',
+                  fontWeight: 'bold',
+                }}
+              >
+                {isCancelling ? 'Cancelling...' : 'Yes, Cancel'}
               </button>
             </div>
           </div>

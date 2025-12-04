@@ -39,11 +39,14 @@ export default function MessagesSideBar({
 
   return (
     <div
-      className={`relative w-full flex-col md:max-w-[360px] ${show ? "flex" : "hidden"}`}
+      className={`relative w-full flex-col md:max-w-[360px] bg-slate-900 border-r border-slate-700 ${show ? "flex" : "hidden"}`}
     >
-      {
-        usersMenuOpen && <UserMenu loggedInUser={user}/>
-      }
+      {usersMenuOpen && (
+        <UserMenu 
+          loggedInUser={user} 
+          onClose={() => setUsersMenuOpen(false)}
+        />
+      )}
       <MenuBar onMenuClick={() => { setUsersMenuOpen(true); }} />
       <ChannelList
         filters={{ type: "messaging", members: { $in: [user.id] } }}

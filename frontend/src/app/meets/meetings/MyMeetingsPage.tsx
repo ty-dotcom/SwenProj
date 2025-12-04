@@ -53,7 +53,7 @@ interface MeetingItemProps {
 }
 
 function MeetingItem({ call }: MeetingItemProps) {
-  const meetingLink = `/meeting/${call.id}`;
+  const meetingLink = `/meets/meeting/${call.id}`;
 
   const isInFuture =
     call.state.startsAt && new Date(call.state.startsAt) > new Date();

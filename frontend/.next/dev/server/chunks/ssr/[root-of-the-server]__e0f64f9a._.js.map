@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/tyree/Codes/JS/SWEN/frontend/src/app/meeting/%5Bid%5D/page.tsx"],"sourcesContent":["import { Metadata } from \"next\"\r\n\r\ninterface PageProps {\r\n    params: Promise<{ id: string }>\r\n}\r\n\r\nexport async function generateMetadata({ params }: PageProps): Promise<Metadata> {\r\n    const { id } = await params;\r\n  return {\r\n    title: `Meeting ${id}`,\r\n    \r\n  };\r\n}\r\n\r\nexport  default async function Page({params,}: {params: Promise<{ id: string }>}){\r\n    const { id } = await params;\r\n    console.log(id)\r\n    return(\r\n        <div>\r\n            Mee\r\n        </div>\r\n    )\r\n}"],"names":[],"mappings":";;;;;;;;AAMO,eAAe,iBAAiB,EAAE,MAAM,EAAa;IACxD,MAAM,EAAE,EAAE,EAAE,GAAG,MAAM;IACvB,OAAO;QACL,OAAO,CAAC,QAAQ,EAAE,IAAI;IAExB;AACF;AAEgB,eAAe,KAAK,EAAC,MAAM,EAAqC;IAC5E,MAAM,EAAE,EAAE,EAAE,GAAG,MAAM;IACrB,QAAQ,GAAG,CAAC;IACZ,qBACI,0PAAC;kBAAI;;;;;;AAIb","debugId":null}}]
-}

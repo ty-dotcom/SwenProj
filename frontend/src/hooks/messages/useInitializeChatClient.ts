@@ -10,7 +10,7 @@ export default function useInitializeChatClient() {
         if (!user?.id) return; 
 
         const client = StreamChat.getInstance(process.env.NEXT_PUBLIC_STREAM_MESSAGES_API_KEY!);
-
+        
         client.connectUser(
             {
                 id: user.id,

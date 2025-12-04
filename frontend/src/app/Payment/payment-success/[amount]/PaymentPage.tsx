@@ -1,5 +1,6 @@
 "use client";
 import { useUser } from "@clerk/nextjs";
+import { useEffect } from "react";
 
 export default function PaymentSuccess({
     amount
@@ -10,9 +11,41 @@ export default function PaymentSuccess({
     const { user } = useUser(); 
     const emailAdd = user?.emailAddresses[0].emailAddress;
     
+    useEffect(() => {
+        // Update booking status to "Paid" after successful payment
+        const updateBookingStatus = async () => {
+            const bookingIds = localStorage.getItem('unpaidBookingIds');
+            
+            if (bookingIds && emailAdd) {
+                try {
+                    const ids = JSON.parse(bookingIds);
+                    
+                    // Update each booking to "Paid"
+                    await fetch('http://localhost:8000/api/update-booking-status/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            booking_ids: ids,
+                            status: 'Paid'
+                        })
+                    });
+                    
+                    // Clear the stored booking IDs
+                    localStorage.removeItem('unpaidBookingIds');
+                } catch (error) {
+                    console.error('Error updating booking status:', error);
+                }
+            }
+        };
+
+        updateBookingStatus();
+    }, [emailAdd]);
+    
     if (!user?.id) {
-        return;
-      }
+        return null;
+    }
 
     function generateTransID() {
         var uuid;
@@ -50,6 +83,15 @@ export default function PaymentSuccess({
                         <h3>Email: {emailAdd}</h3>
                     </span>
                 </div>
+            </div>
+
+            <div className="mt-8">
+                <a 
+                    href="/dashboard"
+                    className="bg-white text-purple-600 px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition inline-block"
+                >
+                    Go to Dashboard
+                </a>
             </div>
         </div>
     );

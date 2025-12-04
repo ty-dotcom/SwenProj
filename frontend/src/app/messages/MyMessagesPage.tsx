@@ -19,7 +19,6 @@ export default function MessagesPage() {
   const isLargeScreen = windowSize.width >= 768;
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (isLargeScreen) setMessagesSideBarOpen(false);
   }, [windowSize.width]);
 
@@ -27,7 +26,7 @@ export default function MessagesPage() {
     async function setUpServiceWorker() {
       try {
         await registerServiceWorker();
-      }catch (error) {
+      } catch (error) {
         console.error("Service Worker registration failed:", error);
       }
     }
@@ -36,18 +35,18 @@ export default function MessagesPage() {
 
   useEffect(() => {
     async function syncPushSubscription() {
-      try{
+      try {
         const subscription = await getCurrentPushSubscription();
         if (subscription) {
           await sendPushSubscriptionToServer(subscription);
         }
-      }catch (error) {
+      } catch (error) {
         console.error(error);
       }
     }
     syncPushSubscription();
   }, []);
-  
+
   const handleCloseSideBar = useCallback(() => {
     setMessagesSideBarOpen(false);
   }, []);
@@ -61,7 +60,7 @@ export default function MessagesPage() {
   }
 
   return (
-    <div className="h-screen bg-black xl:px-20 xl:py-8">
+    <div className="h-screen bg-gradient-to-b from-gray-900 via-[#1a1530] to-black xl:px-20 xl:py-8 text-white">
       <div className="m-auto flex h-full min-w-[350px] max-w-[1600px] flex-col shadow-sm">
         <Chat client={chatClient}>
           <div className="flex justify-center border-b border-b-amber-50 p-3 md:hidden">
@@ -77,6 +76,7 @@ export default function MessagesPage() {
               )}
             </button>
           </div>
+
           <div className="flex h-full flex-row">
             <MessagesSideBar
               user={user}

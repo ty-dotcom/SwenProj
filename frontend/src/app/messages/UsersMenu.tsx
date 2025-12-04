@@ -2,13 +2,15 @@ import { Avatar, useChatContext } from "stream-chat-react";
 import { UserResource } from "@clerk/types";
 import { useEffect, useState } from "react";
 import type { UserResponse } from "stream-chat";
+import { X } from "lucide-react";
 
 interface UserMenuProps {
   loggedInUser: UserResource;
+  onClose: () => void;
 }
 
-export default function UserMenu({ loggedInUser }: UserMenuProps) {
-  const { client } = useChatContext();
+export default function UserMenu({ loggedInUser, onClose }: UserMenuProps) {
+  const { client, setActiveChannel } = useChatContext();
 
   const [users, setUsers] = useState<(UserResponse & {image?: string})[]>();
 
@@ -29,8 +31,44 @@ export default function UserMenu({ loggedInUser }: UserMenuProps) {
     loadInitialUsers();
   }, [client, loggedInUser.id]);
 
+  async function startChatWithUser(userId: string) {
+    try {
+      const channel = client.channel("messaging", {
+        members: [loggedInUser.id, userId],
+      });
+      await channel.create();
+      setActiveChannel(channel);
+      onClose();
+    } catch (error) {
+      console.error("Error starting chat:", error);
+      alert("Failed to start chat");
+    }
+  }
+
   return (
-    <div className="absolute z-10 h-full w-full bg-red-300">{users?.map((user) => <UserResult user = {user} onUserClicked={()=> {}} key={user.id}/>)}</div>
+    <div className="absolute z-10 h-full w-full bg-slate-900/95 backdrop-blur-sm border-r border-slate-700 flex flex-col">
+      {/* Header */}
+      <div className="flex items-center justify-between p-4 border-b border-slate-700">
+        <h2 className="text-white font-semibold text-lg">Start New Chat</h2>
+        <button 
+          onClick={onClose}
+          className="text-gray-400 hover:text-white transition-colors"
+        >
+          <X className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Users List */}
+      <div className="flex-1 overflow-y-auto p-2">
+        {users?.map((user) => (
+          <UserResult 
+            user={user} 
+            onUserClicked={startChatWithUser} 
+            key={user.id}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -41,10 +79,20 @@ interface UserResultProps {
 
 function UserResult({ user, onUserClicked }: UserResultProps) {
     return (
-      <button className="mb-3 w-full flex justify-center p-3 gap-2 hover:bg-gray-200" onClick={() => onUserClicked(user.id)}>
-        <span><Avatar image={user.image} name={user.name || user.id} className="w-10 h-10" /></span>
-        <span className="whitespace-nowrap overflow-hidden text-ellipsis">{user.name || user.id} </span>
-        {user.online && <span className="h-3 w-3 rounded-full bg-green-500 self-center">Online</span>}
+      <button 
+        className="w-full flex items-center p-3 gap-3 rounded-lg hover:bg-slate-800 transition-colors text-left"
+        onClick={() => onUserClicked(user.id)}
+      >
+        <Avatar image={user.image} name={user.name || user.id} />
+        <div className="flex-1 min-w-0">
+          <div className="text-white font-medium truncate">{user.name || user.id}</div>
+          {user.online && (
+            <div className="flex items-center gap-1 text-xs text-green-400">
+              <span className="h-2 w-2 rounded-full bg-green-400"></span>
+              Online
+            </div>
+          )}
+        </div>
       </button>
     );
 }

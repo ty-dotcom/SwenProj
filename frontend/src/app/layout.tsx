@@ -30,11 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
           <ClientProvider>
               <Navbar/>
-              <main className='mx-auto max-w-5xl px-3 py-6'>{children}</main>
+              <main>{children}</main>
           </ClientProvider>
         </body>
       </html>
