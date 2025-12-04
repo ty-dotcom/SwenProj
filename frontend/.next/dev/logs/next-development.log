@@ -1168,3 +1168,5 @@ Import trace:
     ./frontend/src/app/layout.tsx
 
 
+[00:37:17.113] Server  LOG      ✓ Compiled in 7.1s
+[00:37:17.212] Server  LOG        Reload env: .env.local
