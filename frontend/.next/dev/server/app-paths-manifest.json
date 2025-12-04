@@ -1,1 +1,7 @@
-{}
+{
+  "/Payment/page": "app/Payment/page.js",
+  "/Payment/payment-success/[amount]/page": "app/Payment/payment-success/[amount]/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/create-payment-intent/route": "app/api/create-payment-intent/route.js",
+  "/page": "app/page.js"
+}
