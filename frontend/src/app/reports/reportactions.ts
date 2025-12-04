@@ -1,7 +1,7 @@
 "use server";
 
 import { auth } from "@clerk/nextjs/server";
-import { prisma } from "/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import { sendNotification } from "@/lib/notifications";
 
 // Define the structure of a Progress Report
